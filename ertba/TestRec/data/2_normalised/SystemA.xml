@@ -1,0 +1,970 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000001</NumID>
+<RefID>G</RefID>
+<Book>DKWMM</Book>
+<Quantity>270</Quantity>
+<Currency>MYR</Currency>
+<Strike>841470.99</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000002</NumID>
+<RefID>C</RefID>
+<Book>XURAX</Book>
+<Quantity>208</Quantity>
+<Currency>CHF</Currency>
+<Strike>909297.43</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000003</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>494</Quantity>
+<Currency>EUR</Currency>
+<Strike>141120.01</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000004</NumID>
+<RefID>B</RefID>
+<Book>LONFX</Book>
+<Quantity>326</Quantity>
+<Currency>JYP</Currency>
+<Strike>756802.5</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000005</NumID>
+<RefID>F</RefID>
+<Book>DKWFX</Book>
+<Quantity>141</Quantity>
+<Currency>NZD</Currency>
+<Strike>958924.28</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000006</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>480</Quantity>
+<Currency>XPT</Currency>
+<Strike>279415.5</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000007</NumID>
+<RefID>H</RefID>
+<Book>DKWLD</Book>
+<Quantity>376</Quantity>
+<Currency>XAU</Currency>
+<Strike>656986.6</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000008</NumID>
+<RefID>E</RefID>
+<Book>DKBWS</Book>
+<Quantity>72</Quantity>
+<Currency>NOK</Currency>
+<Strike>989358.25</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000009</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>455</Quantity>
+<Currency>EUR</Currency>
+<Strike>412118.49</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000010</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>419</Quantity>
+<Currency>USD</Currency>
+<Strike>544021.12</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000011</NumID>
+<RefID>E</RefID>
+<Book>DKBWS</Book>
+<Quantity>2</Quantity>
+<Currency>CAD</Currency>
+<Strike>999990.21</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000012</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>421</Quantity>
+<Currency>XAG</Currency>
+<Strike>536572.92</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000013</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>453</Quantity>
+<Currency>XPT</Currency>
+<Strike>420167.04</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000014</NumID>
+<RefID>E</RefID>
+<Book>DKBWS</Book>
+<Quantity>68</Quantity>
+<Currency>AUD</Currency>
+<Strike>990607.36</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000016</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>478</Quantity>
+<Currency>EUR</Currency>
+<Strike>287903.32</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000017</NumID>
+<RefID>D</RefID>
+<Book>DVSSA</Book>
+<Quantity>137</Quantity>
+<Currency>SEK</Currency>
+<Strike>961397.5</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000018</NumID>
+<RefID>H</RefID>
+<Book>DKWLD</Book>
+<Quantity>330</Quantity>
+<Currency>ZAR</Currency>
+<Strike>750987.25</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000019</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>494</Quantity>
+<Currency>XPT</Currency>
+<Strike>149877.21</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000020</NumID>
+<RefID>G</RefID>
+<Book>DKWMM</Book>
+<Quantity>204</Quantity>
+<Currency>SGD</Currency>
+<Strike>912945.26</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000021</NumID>
+<RefID>C</RefID>
+<Book>XURAX</Book>
+<Quantity>273</Quantity>
+<Currency>HKD</Currency>
+<Strike>836655.64</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000022</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>499</Quantity>
+<Currency>EUR</Currency>
+<Strike>8851.31</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000023</NumID>
+<RefID>C</RefID>
+<Book>XURAX</Book>
+<Quantity>266</Quantity>
+<Currency>HKD</Currency>
+<Strike>846220.41</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000024</NumID>
+<RefID>G</RefID>
+<Book>DKWMM</Book>
+<Quantity>212</Quantity>
+<Currency>SGD</Currency>
+<Strike>905578.37</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000025</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>495</Quantity>
+<Currency>XPT</Currency>
+<Strike>132351.76</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000026</NumID>
+<RefID>H</RefID>
+<Book>DKWLD</Book>
+<Quantity>323</Quantity>
+<Currency>ZAR</Currency>
+<Strike>762558.46</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000027</NumID>
+<RefID>D</RefID>
+<Book>DVSSA</Book>
+<Quantity>146</Quantity>
+<Currency>SEK</Currency>
+<Strike>956375.93</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000028</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>481</Quantity>
+<Currency>EUR</Currency>
+<Strike>270905.79</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000029</NumID>
+<RefID>B</RefID>
+<Book>LONFX</Book>
+<Quantity>374</Quantity>
+<Currency>GBP</Currency>
+<Strike>663633.89</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000030</NumID>
+<RefID>E</RefID>
+<Book>DKBWS</Book>
+<Quantity>77</Quantity>
+<Currency>AUD</Currency>
+<Strike>988031.63</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000031</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>457</Quantity>
+<Currency>XPT</Currency>
+<Strike>404037.65</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000032</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>417</Quantity>
+<Currency>XAG</Currency>
+<Strike>551426.69</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000033</NumID>
+<RefID>E</RefID>
+<Book>DKBWS</Book>
+<Quantity>6</Quantity>
+<Currency>CAD</Currency>
+<Strike>999911.87</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000034</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>424</Quantity>
+<Currency>USD</Currency>
+<Strike>529082.69</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000135</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>451</Quantity>
+<Currency>EUR</Currency>
+<Strike>428182.67</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000036</NumID>
+<RefID>E</RefID>
+<Book>DKBWS</Book>
+<Quantity>63</Quantity>
+<Currency>NOK</Currency>
+<Strike>991778.86</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000037</NumID>
+<RefID>H</RefID>
+<Book>DKWLD</Book>
+<Quantity>382</Quantity>
+<Currency>XAU</Currency>
+<Strike>643538.14</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000038</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>477</Quantity>
+<Currency>XPT</Currency>
+<Strike>296368.58</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000039</NumID>
+<RefID>F</RefID>
+<Book>DKWFX</Book>
+<Quantity>133</Quantity>
+<Currency>NZD</Currency>
+<Strike>963795.39</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000040</NumID>
+<RefID>B</RefID>
+<Book>LONFX</Book>
+<Quantity>333</Quantity>
+<Currency>JYP</Currency>
+<Strike>745113.17</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000041</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>493</Quantity>
+<Currency>EUR</Currency>
+<Strike>158622.67</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000042</NumID>
+<RefID>D</RefID>
+<Book>DVSSA</Book>
+<Quantity>199</Quantity>
+<Currency>DKK</Currency>
+<Strike>916521.55</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000043</NumID>
+<RefID>G</RefID>
+<Book>DKWMM</Book>
+<Quantity>277</Quantity>
+<Currency>MYR</Currency>
+<Strike>831774.75</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000044</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>499</Quantity>
+<Currency>XPT</Currency>
+<Strike>17701.93</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000046</NumID>
+<RefID>C</RefID>
+<Book>XURAX</Book>
+<Quantity>216</Quantity>
+<Currency>CHF</Currency>
+<Strike>901788.35</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000047</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>496</Quantity>
+<Currency>EUR</Currency>
+<Strike>123573.13</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000048</NumID>
+<RefID>B</RefID>
+<Book>LONFX</Book>
+<Quantity>320</Quantity>
+<Currency>JYP</Currency>
+<Strike>768254.67</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000049</NumID>
+<RefID>F</RefID>
+<Book>DKWFX</Book>
+<Quantity>150</Quantity>
+<Currency>HKD</Currency>
+<Strike>953752.66</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000050</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>482</Quantity>
+<Currency>XPT</Currency>
+<Strike>262374.86</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000051</NumID>
+<RefID>H</RefID>
+<Book>DKWLD</Book>
+<Quantity>371</Quantity>
+<Currency>XAU</Currency>
+<Strike>670229.18</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000052</NumID>
+<RefID>E</RefID>
+<Book>DKBWS</Book>
+<Quantity>81</Quantity>
+<Currency>NOK</Currency>
+<Strike>986627.6</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000053</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>459</Quantity>
+<Currency>EUR</Currency>
+<Strike>395925.16</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000054</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>414</Quantity>
+<Currency>USD</Currency>
+<Strike>558789.05</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000155</NumID>
+<RefID>E</RefID>
+<Book>DKBWS</Book>
+<Quantity>11</Quantity>
+<Currency>CAD</Currency>
+<Strike>999755.18</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000056</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>426</Quantity>
+<Currency>XAG</Currency>
+<Strike>521551.01</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000057</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>449</Quantity>
+<Currency>XAG</Currency>
+<Strike>436164.76</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000058</NumID>
+<RefID>E</RefID>
+<Book>DKBWS</Book>
+<Quantity>59</Quantity>
+<Currency>AUD</Currency>
+<Strike>992872.65</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000059</NumID>
+<RefID>B</RefID>
+<Book>LONFX</Book>
+<Quantity>385</Quantity>
+<Currency>GBP</Currency>
+<Strike>636738.01</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000060</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>476</Quantity>
+<Currency>EUR</Currency>
+<Strike>304810.63</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000061</NumID>
+<RefID>D</RefID>
+<Book>DVSSA</Book>
+<Quantity>129</Quantity>
+<Currency>SEK</Currency>
+<Strike>966117.78</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000062</NumID>
+<RefID>H</RefID>
+<Book>DKWLD</Book>
+<Quantity>336</Quantity>
+<Currency>ZAR</Currency>
+<Strike>739180.7</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000063</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>492</Quantity>
+<Currency>XPT</Currency>
+<Strike>167355.71</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000064</NumID>
+<RefID>F</RefID>
+<Book>DKWFX</Book>
+<Quantity>195</Quantity>
+<Currency>HKD</Currency>
+<Strike>920026.04</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000066</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>499</Quantity>
+<Currency>EUR</Currency>
+<Strike>26551.16</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000067</NumID>
+<RefID>C</RefID>
+<Book>XURAX</Book>
+<Quantity>258</Quantity>
+<Currency>HKD</Currency>
+<Strike>855519.98</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000068</NumID>
+<RefID>G</RefID>
+<Book>DKWMM</Book>
+<Quantity>220</Quantity>
+<Currency>SGD</Currency>
+<Strike>897927.69</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000069</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>496</Quantity>
+<Currency>XPT</Currency>
+<Strike>114784.82</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000070</NumID>
+<RefID>H</RefID>
+<Book>DKWLD</Book>
+<Quantity>316</Quantity>
+<Currency>ZAR</Currency>
+<Strike>773890.69</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000071</NumID>
+<RefID>D</RefID>
+<Book>DVSSA</Book>
+<Quantity>154</Quantity>
+<Currency>DKK</Currency>
+<Strike>951054.66</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000072</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>483</Quantity>
+<Currency>EUR</Currency>
+<Strike>253823.37</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000073</NumID>
+<RefID>B</RefID>
+<Book>LONFX</Book>
+<Quantity>368</Quantity>
+<Currency>GBP</Currency>
+<Strike>676771.96</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000074</NumID>
+<RefID>E</RefID>
+<Book>DKBWS</Book>
+<Quantity>85</Quantity>
+<Currency>AUD</Currency>
+<Strike>985146.27</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000075</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>460</Quantity>
+<Currency>XPT</Currency>
+<Strike>387781.64</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000076</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>412</Quantity>
+<Currency>XAG</Currency>
+<Strike>566107.64</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000077</NumID>
+<RefID>E</RefID>
+<Book>DKBWS</Book>
+<Quantity>15</Quantity>
+<Currency>CAD</Currency>
+<Strike>999520.16</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000078</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>428</Quantity>
+<Currency>USD</Currency>
+<Strike>513978.46</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000079</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>447</Quantity>
+<Currency>USD</Currency>
+<Strike>444112.67</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000080</NumID>
+<RefID>E</RefID>
+<Book>DKBWS</Book>
+<Quantity>55</Quantity>
+<Currency>NOK</Currency>
+<Strike>993888.66</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000081</NumID>
+<RefID>H</RefID>
+<Book>DKWLD</Book>
+<Quantity>388</Quantity>
+<Currency>XAU</Currency>
+<Strike>629888</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000082</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>474</Quantity>
+<Currency>XPT</Currency>
+<Strike>313228.79</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000083</NumID>
+<RefID>F</RefID>
+<Book>DKWFX</Book>
+<Quantity>124</Quantity>
+<Currency>NZD</Currency>
+<Strike>968364.47</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000084</NumID>
+<RefID>B</RefID>
+<Book>LONFX</Book>
+<Quantity>340</Quantity>
+<Currency>JYP</Currency>
+<Strike>733190.33</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000085</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>492</Quantity>
+<Currency>EUR</Currency>
+<Strike>176075.62</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000086</NumID>
+<RefID>D</RefID>
+<Book>DVSSA</Book>
+<Quantity>191</Quantity>
+<Currency>DKK</Currency>
+<Strike>923458.45</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000087</NumID>
+<RefID>G</RefID>
+<Book>DKWMM</Book>
+<Quantity>284</Quantity>
+<Currency>MYR</Currency>
+<Strike>821817.84</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000088</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>499</Quantity>
+<Currency>XPT</Currency>
+<Strike>35398.31</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000089</NumID>
+<RefID>G</RefID>
+<Book>DKWMM</Book>
+<Quantity>255</Quantity>
+<Currency>MYR</Currency>
+<Strike>860069.41</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000090</NumID>
+<RefID>C</RefID>
+<Book>XURAX</Book>
+<Quantity>224</Quantity>
+<Currency>CHF</Currency>
+<Strike>893996.67</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000091</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>497</Quantity>
+<Currency>EUR</Currency>
+<Strike>105987.52</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000092</NumID>
+<RefID>B</RefID>
+<Book>LONFX</Book>
+<Quantity>313</Quantity>
+<Currency>JYP</Currency>
+<Strike>779466.07</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000093</NumID>
+<RefID>F</RefID>
+<Book>DKWFX</Book>
+<Quantity>158</Quantity>
+<Currency>HKD</Currency>
+<Strike>948282.15</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000094</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>484</Quantity>
+<Currency>XPT</Currency>
+<Strike>245251.99</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000095</NumID>
+<RefID>H</RefID>
+<Book>DKWLD</Book>
+<Quantity>365</Quantity>
+<Currency>XAU</Currency>
+<Strike>683261.72</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000096</NumID>
+<RefID>E</RefID>
+<Book>DKBWS</Book>
+<Quantity>90</Quantity>
+<Currency>NOK</Currency>
+<Strike>983587.75</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000097</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>462</Quantity>
+<Currency>EUR</Currency>
+<Strike>379607.74</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000098</NumID>
+<RefID>A</RefID>
+<Book>FGGXS</Book>
+<Quantity>409</Quantity>
+<Currency>USD</Currency>
+<Strike>573381.88</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000099</NumID>
+<RefID>E</RefID>
+<Book>DKBWS</Book>
+<Quantity>19</Quantity>
+<Currency>CAD</Currency>
+<Strike>999206.84</Strike>
+</reco>
+
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<reco>
+<NumID>10000100</NumID>
+<RefID>I</RefID>
+<Book>DKWFF</Book>
+<Quantity>431</Quantity>
+<Currency>XAG</Currency>
+<Strike>506365.65</Strike>
+</reco>
+

@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<notprocessed_pri business="TestRec" run_date="01/10/2005" primary="SystemA"  content="NotProcessed">
+
+<rec key="10000030,E" type="NotProcessed Primary" first_seen="01/10/2005">
+ <keys>
+  <key field="NumID">10000030</key>
+  <key field="RefID">E</key>
+ </keys>
+ <matches>
+  <match field="Book" status="Break" difference=" ">
+   <primary>DKBWS</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Currency" status="Break" difference=" ">
+   <primary>AUD</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Strike" status="Break" difference=" ">
+   <primary>988031.63</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Quantity" status="Break" difference=" ">
+   <primary>77</primary>
+   <secondary></secondary>
+  </match>
+ </matches>
+ <reference>
+ </reference>
+</rec>
+<rec key="10000070,H" type="NotProcessed Primary" first_seen="01/10/2005">
+ <keys>
+  <key field="NumID">10000070</key>
+  <key field="RefID">H</key>
+ </keys>
+ <matches>
+  <match field="Book" status="Break" difference=" ">
+   <primary>DKWLD</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Currency" status="Break" difference=" ">
+   <primary>ZAR</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Strike" status="Break" difference=" ">
+   <primary>773890.69</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Quantity" status="Break" difference=" ">
+   <primary>316</primary>
+   <secondary></secondary>
+  </match>
+ </matches>
+ <reference>
+ </reference>
+</rec>
+<rec key="10000020,G" type="NotProcessed Primary" first_seen="01/10/2005">
+ <keys>
+  <key field="NumID">10000020</key>
+  <key field="RefID">G</key>
+ </keys>
+ <matches>
+  <match field="Book" status="Break" difference=" ">
+   <primary>DKWMM</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Currency" status="Break" difference=" ">
+   <primary>SGD</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Strike" status="Break" difference=" ">
+   <primary>912945.26</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Quantity" status="Break" difference=" ">
+   <primary>204</primary>
+   <secondary></secondary>
+  </match>
+ </matches>
+ <reference>
+ </reference>
+</rec>
+<rec key="10000135,A" type="NotProcessed Primary" first_seen="01/10/2005">
+ <keys>
+  <key field="NumID">10000135</key>
+  <key field="RefID">A</key>
+ </keys>
+ <matches>
+  <match field="Book" status="Break" difference=" ">
+   <primary>FGGXS</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Currency" status="Break" difference=" ">
+   <primary>EUR</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Strike" status="Break" difference=" ">
+   <primary>428182.67</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Quantity" status="Break" difference=" ">
+   <primary>451</primary>
+   <secondary></secondary>
+  </match>
+ </matches>
+ <reference>
+ </reference>
+</rec>
+<rec key="10000050,I" type="NotProcessed Primary" first_seen="01/10/2005">
+ <keys>
+  <key field="NumID">10000050</key>
+  <key field="RefID">I</key>
+ </keys>
+ <matches>
+  <match field="Book" status="Break" difference=" ">
+   <primary>DKWFF</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Currency" status="Break" difference=" ">
+   <primary>XPT</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Strike" status="Break" difference=" ">
+   <primary>262374.86</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Quantity" status="Break" difference=" ">
+   <primary>482</primary>
+   <secondary></secondary>
+  </match>
+ </matches>
+ <reference>
+ </reference>
+</rec>
+<rec key="10000010,A" type="NotProcessed Primary" first_seen="01/10/2005">
+ <keys>
+  <key field="NumID">10000010</key>
+  <key field="RefID">A</key>
+ </keys>
+ <matches>
+  <match field="Book" status="Break" difference=" ">
+   <primary>FGGXS</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Currency" status="Break" difference=" ">
+   <primary>USD</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Strike" status="Break" difference=" ">
+   <primary>544021.12</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Quantity" status="Break" difference=" ">
+   <primary>419</primary>
+   <secondary></secondary>
+  </match>
+ </matches>
+ <reference>
+ </reference>
+</rec>
+<rec key="10000155,E" type="NotProcessed Primary" first_seen="01/10/2005">
+ <keys>
+  <key field="NumID">10000155</key>
+  <key field="RefID">E</key>
+ </keys>
+ <matches>
+  <match field="Book" status="Break" difference=" ">
+   <primary>DKBWS</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Currency" status="Break" difference=" ">
+   <primary>CAD</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Strike" status="Break" difference=" ">
+   <primary>999755.18</primary>
+   <secondary></secondary>
+  </match>
+  <match field="Quantity" status="Break" difference=" ">
+   <primary>11</primary>
+   <secondary></secondary>
+  </match>
+ </matches>
+ <reference>
+ </reference>
+</rec>
+</notprocessed_pri>

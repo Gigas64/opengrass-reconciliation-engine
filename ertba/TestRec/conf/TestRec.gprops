@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gprops>
+
+  <!-- SETUP INFOMATION SECTION -->
+  <setup_info>
+    <!-- Unique name identifier for this deployment (single word) -->
+    <business_name>TestRec</business_name>
+    <!-- Visual displayed name for the deployment -->
+    <display_name>GRASS Test Reconciliation</display_name>
+    <!-- The sector category for this deployment (single word) -->
+    <sector_name>TestSector</sector_name>
+    <!-- The category name for this deployment (single word) -->
+    <category_name>TestCategory</category_name>
+    <!-- Primary system identifier (single word) -->
+    <primary>SystemA</primary>
+    <!-- Secondary system identifier (single word) -->
+    <secondary>SystemB</secondary>
+  </setup_info>
+
+  <!-- PROPERTY INFORMATION SECTION -->
+  <property_info>
+    <!-- The behaviour of the reconciliation before the data -->
+    <!-- is passed through the matching engine -->
+    <!-- Options: -->
+    <!-- 1) Standard - Standard reconciliation behavior -->
+    <!-- 2) Merge - Merge previous results before matching -->
+    <tracker_type>Standard</tracker_type>
+    <!-- 'true' or 'false' depending if has passed QA -->
+    <vaulted>false</vaulted>
+    <!-- type and time customer expectation of completion -->
+    <expected_completion>08:30</expected_completion>
+    <!-- If > 0 then delete record if inactive after expiry_count -->
+    <expiry_count>1</expiry_count>
+    <!-- offset the first seen date as the true data date -->
+    <!-- Options: -->
+    <!-- 1) none - no offset -->
+    <!-- 2) short - an offset of -1 for 5 day week -->
+    <!-- 3) long - an offset of -1 for 7 day week -->
+    <run_offset>none</run_offset>
+    <!-- Debug level for Core Engine (0-5) -->
+    <core_debug>0</core_debug>
+    <!-- Debug level for Tracker Engine (0-5) -->
+    <tracker_debug>3</tracker_debug>
+    <!-- Number of days to span match reference archive -->
+    <max_match_ref>7</max_match_ref>
+    <!-- Number of days to span break reference archive -->
+    <max_break_ref>28</max_break_ref>
+    <!-- Auto maintenance log archive run count -->
+    <max_log>3</max_log>
+    <!-- Matching of duplicate entries -->
+    <match_duplicates>false</match_duplicates>
+    <!-- Pre Matching tolerance for one-sided entries -->
+    <one_sided_tolerance>false</one_sided_tolerance>
+  </property_info>
+
+  <!-- FILE INFORMATION SECTION -->
+  <!-- By convention use 'PrimaryTransfer' and 'SecondaryTransfer' -->
+  <!-- as the transfer_names when a standard transfer model is used -->
+  <file_info>
+
+    <!-- single/multiple file transfer information -->
+    <transfer_info>
+      <!-- unique name identifier for the transfer -->
+      <transfer_name>PrimaryTransfer</transfer_name>
+      <!-- transfer source information -->
+      <transfer_source>
+        <!-- transfer type (SSH,SSH_NONDATA,FTP,FTP_NONDATA or Script) -->
+        <type>Script</type>
+        <!-- transfer information -->
+        <login></login>
+        <password></password>
+        <machine></machine>
+        <path></path>
+        <filename>SystemA.csv</filename>
+      </transfer_source>
+      <!-- Script to run on transfer -->
+      <transfer_script>get_testftp_files.pl</transfer_script>
+      <!-- System associated with this transfer -->
+      <system_name>SystemA</system_name>
+      <!-- Type and time of delivery (type:time) -->
+      <delivery_schedule>10:40</delivery_schedule>
+      <!-- contact information for file queries -->
+      <contacts>
+        <contact>
+          <name>Georg Riker</name>
+          <number>66960</number>
+          <email>georg.riker@opengrass.org</email>
+        </contact>
+        <cover>
+          <name>Tanya Vincent</name>
+          <number>43253452345</number>
+          <email>tanya.vincent@opengrass.org</email>
+        </cover>
+      </contacts>
+      <!-- additional information of use -->
+      <notes></notes>
+    </transfer_info>
+
+    <!-- single/multiple file transfer information -->
+    <transfer_info>
+      <!-- unique name identifier for the transfer -->
+      <transfer_name>SecondaryTransfer</transfer_name>
+      <!-- transfer source information -->
+      <transfer_source>
+        <!-- transfer type (SSH,SSH_NONDATA,FTP,FTP_NONDATA or Script) -->
+        <type>Script</type>
+        <!-- transfer information -->
+        <login></login>
+        <password></password>
+        <machine></machine>
+        <path></path>
+        <filename>SystemB.csv</filename>
+      </transfer_source>
+      <!-- Script to run on transfer -->
+      <transfer_script>get_testftp_files.pl</transfer_script>
+      <!-- System associated with this transfer -->
+      <system_name>SystemB</system_name>
+      <!-- Type and time of delivery (type:time) -->
+      <delivery_schedule>8:30</delivery_schedule>
+      <!-- contact information for file queries -->
+      <contacts>
+        <contact>
+          <name>Katie Burns</name>
+          <number>66960</number>
+          <email>katie.burns@opengrass.org</email>
+        </contact>
+        <cover>
+          <name>Binnie Kanji</name>
+          <number>43253452345</number>
+          <email>benakshi.kanji@opengrass.org</email>
+        </cover>
+      </contacts>
+      <!-- additional information of use -->
+      <notes></notes>
+    </transfer_info>
+  </file_info>
+
+  <!-- FIELD INFORMATION SECTION -->
+  <!-- Field information including consolidation with the setting -->
+  <!--   aggregate           - Add values together and display total-->
+  <!--   tolerate            - One value displayed others are ignored -->
+  <!--   concatenate_unique  - Every unique value is displayed as a list -->
+  <!--   concatenate_verbose - Every value is displayed as a list -->
+  <!--   non_tolerate        - Every value must be identical -->
+  <!-- If all consolidation fields are set to 'non_tolerate' then consolidation -->
+  <!-- is bypassed and a one to one reconciliation is performed. -->
+  <field_info>
+    <!-- Unique key fields with consolidation attributes -->
+    <!-- both consolidation attributes should always be 'non_tolerate' -->
+    <!-- the 'format' attribute is currently not used -->
+    <keys>
+      <field p_c="non_tolerate" s_c="non_tolerate" format="">NumID</field>
+      <field p_c="non_tolerate" s_c="non_tolerate" format="">RefID</field>
+    </keys>
+    <!-- Matching fields with consolidation, tolerance and format attributes -->
+    <!-- Available 'format' options are: -->
+    <!--   text        - Default setting -->
+    <!--   numeric     - Present this field in numeric format -->
+    <!--   ignore_case - When matching, case is ignored. -->
+    <!-- If 'format' is left blank it assumes 'text' -->
+    <!-- If 'tolerance' is left blank it assumes no tolerance -->
+    <matches>
+      <field p_c="non_tolerate" s_c="non_tolerate" format="text" tolerance="">Book</field>
+      <field p_c="non_tolerate" s_c="non_tolerate" format="text" tolerance="">Currency</field>
+      <field p_c="non_tolerate" s_c="non_tolerate" format="numeric" tolerance="">Strike</field>
+      <field p_c="non_tolerate" s_c="non_tolerate" format="numeric" tolerance="">Quantity</field>
+    </matches>
+    <!-- Infomration fields with system, consolidation and format attributes -->
+    <!-- Fill in 'p_c' and/or 's_c' to indicate the side of the field -->
+    <!-- the 'format' attribute is currently not used -->
+    <info>
+    </info>
+  </field_info>
+
+  <!-- MANAGEMENT INFORMATION SECTION -->
+  <management_info>
+    <!-- The cost centre to be charged for this deployment -->
+    <cost_centre>0691008186</cost_centre>
+    <!-- The charge band for this reconciliation (1,2,3,5,7,11) -->
+    <cost_band>5</cost_band>
+    <!-- The signoff against the cost centre -->
+    <cost_signatory>John Orton</cost_signatory>
+    <!-- Cost justification for cost for 7 and importantly 11 band -->
+    <cost_justification>Because we have to test</cost_justification>
+    <!-- The name of the sign off for the charged cost centre -->
+    <deployment_sponsor>Stephen Walsh</deployment_sponsor>
+    <!-- The reason and resoning behind this deployment -->
+    <deployment_reason>For Testing</deployment_reason>
+    <!-- Date of deployment -->
+    <deployment_date>12/12/2003</deployment_date>
+    <!-- The name of the person to authorise access -->
+    <access_authority>Darryl Oatridge</access_authority>
+    <!-- The name of the person to backup the authoriser -->
+    <backup_authority>Katie Burns</backup_authority>
+    <!-- Business Signoff -->
+    <business_signoff></business_signoff>
+    <!-- QA Signoff -->
+    <qa_signoff></qa_signoff>
+    <!-- Deployer Signoff -->
+    <deployer_signoff></deployer_signoff>
+    <!-- Support Signoff -->
+    <support_signoff></support_signoff>
+    <!-- Development Signoff (optional) -->
+    <dev_signoff></dev_signoff>
+  </management_info>
+</gprops>

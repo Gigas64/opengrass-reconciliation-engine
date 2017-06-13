@@ -1,0 +1,34 @@
+2005/08/25 GR  - Target Release: ????
+        * Totals values of matching engine are not summing up
+        - missing OneSideds and Duplicates
+        
+        * Not processed values like Duplicates and Onesideds should be 
+        printed to an extra file.
+        
+        * Configuration of the system for ftp and sftp.
+        In general everything could be done with OA.
+        Problem: Configuration must be done inthe OA props files
+        - in the past the configuration of that was done in the gprops.
+        Solution:
+        a) Generate the necessary part of OA props from the gprops
+           (if the point of view is the reconciliation)
+        b) Generate file info for gprops from OA props files
+           (if the point of view is from the OA)
+           
+        * Write User Doc
+        
+        * Write Developer Doc
+        
+        * move utility modules (from the Gass directory like version.pm, error.pm) in another directory
+		src/
+			java/
+			perl/
+				utils/
+				Grass/
+					auxiliary/
+							version.pm
+							error.pm
+							debug.pm
+							logging.pm
+							
+		

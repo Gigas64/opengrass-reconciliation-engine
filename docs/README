@@ -1,0 +1,23 @@
+                      Documentation for OpenGrass
+                      ============================
+
+OpenGrass documentation is a work in progress but will hopefully fill
+as time goes by
+
+
+A rough guide:
+
+  programmer/                Documents for OpenGrass programmers.
+
+  programmer/design/         OpenGrass design documents
+
+  programmer/change.log      All changes as and when they are made
+                             with release notes.
+
+
+  user/                      Documents for OpenGrass users.
+
+
+If you'd like to document a new feature, try to find a place for it
+somewhere in book/misc-docs.
+

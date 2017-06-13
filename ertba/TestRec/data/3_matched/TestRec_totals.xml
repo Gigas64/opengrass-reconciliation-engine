@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<totals business="TestRec" run_date="01/10/2005" primary="SystemA" secondary="SystemB" content="totals">
+<sub_totals type="Total Breaks">90</sub_totals>
+<sub_totals type="Total Matches">0</sub_totals>
+<sub_totals type="SystemA not processed">7</sub_totals>
+<sub_totals type="SystemB not processed">7</sub_totals>
+<sub_totals type="SystemA Processed">97</sub_totals>
+<sub_totals type="SystemB Processed">97</sub_totals>
+<sub_totals type="SystemA/SystemB Breaks">90</sub_totals>
+<sub_breaks field="Book">30</sub_breaks>
+<sub_breaks field="Currency">47</sub_breaks>
+<sub_breaks field="Strike">90</sub_breaks>
+<sub_breaks field="Quantity">90</sub_breaks>
+</totals>
