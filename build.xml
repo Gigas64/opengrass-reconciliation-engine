@@ -1,0 +1,190 @@
+<!-- Version 1.00.alpha, Date 2005/08/01, Author Darryl Oatridge -->
+
+<project name="GRASS" default="usage" basedir=".">
+
+<!-- Property Definitions
+
+    The following variables should be set at runtime by adding a
+    "-Dname=value" argument to the command line that invokes Ant.
+
+     classpath         The classpath necessary to compile the
+                       grass packages.
+
+     ert.business      The name of the directory into which the
+                       deployment hierarchy will be created.
+                       Nor-ally, this will be the name of the
+                       reconcilation
+
+     ert.category      The name of the category the particular
+                       business area belongs.
+
+     ert.region        The name of the region the particular
+                       business area belongs.
+
+
+-->
+
+  <!-- =================================================================== -->
+  <!-- Initialization target                                               -->
+  <!-- =================================================================== -->
+  <target name="init">
+    <tstamp/>
+    <property name="Name" value="OpenGrass Reconciliation Engine"/>
+    <property name="name" value="OpenGrass"/>
+    <property name="version" value="1.00.alpha_01"/>
+
+    <echo message="----------- ${Name} [${version}] ------------"/>
+
+    <property name="debug" value="on"/>
+    <property name="optimize" value="on"/>
+    <property name="deprecation" value="on"/>
+
+    <property name="src.dir" value="./src/java"/>
+    <property name="lib.dir" value="./lib"/>
+    <property name="docs.dir" value="./docs"/>
+    <property name="backup.dir" value="./ertba/backup"/>
+
+    <property name="build.dir" value="./build"/>
+    <property name="build.ertba" value="./build/ertba"/>
+    <property name="build.tar" value="./build/ertba/tar"/>
+    <property name="build.rel" value="./build/ertba/release"/>
+    <property name="build.src" value="./build/src"/>
+    <property name="build.dest" value="./build/classes"/>
+  </target>
+
+
+  <!-- =================================================================== -->
+  <!-- Help on usage                                                       -->
+  <!-- =================================================================== -->
+  <target name="usage" depends="init">
+    <echo message="---------------------------------------------------------"/>
+    <echo message=""/>
+    <echo message=" available targets are:"/>
+    <echo message=""/>
+    <echo message="   deploy          --> create new business with examples"/>
+    <echo message="   destroy         --> removes existing business"/>
+    <echo message="   clean-data      --> cleans a business data"/>
+    <echo message="   test            --> deploy test business"/>
+    <echo message="   compile         --> compiles core source code"/>
+    <echo message="   clean           --> cleans up the core classes"/>
+    <echo message=""/>
+    <echo message=" See the comments inside build.xml for runtime variables."/>
+    <echo message="---------------------------------------------------------"/>
+    <echo message=""/>
+    <echo message=""/>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Prepares the build directory                                        -->
+  <!-- =================================================================== -->
+  <target name="prepare" depends="init">
+    <mkdir dir="${build.dir}"/>
+    <mkdir dir="${build.dir}/logs"/>
+  </target>
+
+ <!-- =================================================================== -->
+  <!-- Prepares to make the tar directory directory                                        -->
+  <!-- =================================================================== -->
+  <target name="prepare-tar" depends="prepare">
+    <mkdir dir="${build.ertba}"/>
+    <mkdir dir="${build.tar}"/>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Prepares the source code                                            -->
+  <!-- =================================================================== -->
+  <target name="prepare-src" depends="prepare">
+    <!-- create directories -->
+    <mkdir dir="${build.src}"/>
+    <mkdir dir="${build.dest}"/>
+
+    <!-- copy src files -->
+    <copy todir="${build.src}">
+      <fileset dir="${src.dir}" excludes="**/*.class"/>
+    </copy>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Prepares the test reconciliation                                    -->
+  <!-- =================================================================== -->
+  <target name="prepare-test" depends="init">
+    <property name="ert.business" value="TestRec"/>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- cleans all the data from a business area                            -->
+  <!-- =================================================================== -->
+  <target name="clean-data" depends="init">
+    <delete>
+      <fileset dir="./ertba/${ert.business}/data/1_raw_data"    includes="*" />
+      <fileset dir="./ertba/${ert.business}/data/2_normalised"  includes="*" />
+      <fileset dir="./ertba/${ert.business}/data/3_matched"     includes="*" />
+      <fileset dir="./ertba/${ert.business}/data/4_tracked"     includes="*" />
+      <fileset dir="./ertba/${ert.business}/data/5_archive"     includes="*" />
+      <fileset dir="./ertba/${ert.business}/logs"               includes="*"/>
+    </delete>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Destroy a reconciliation                                            -->
+  <!-- =================================================================== -->
+  <target name="destroy">
+    <delete dir="./ertba/${ert.business}"/>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- deploy the business area under GRASS_HOME/ertba                     -->
+  <!-- =================================================================== -->
+  <target name="deploy-business">
+    <mkdir  dir="./ertba"/>
+    <mkdir  dir="./ertba/${ert.business}"/>
+    <mkdir  dir="./ertba/${ert.business}/bin"/>
+    <mkdir  dir="./ertba/${ert.business}/data"/>
+    <mkdir  dir="./ertba/${ert.business}/data/1_raw_data"/>
+    <mkdir  dir="./ertba/${ert.business}/data/2_normalised"/>
+    <mkdir  dir="./ertba/${ert.business}/data/3_matched"/>
+    <mkdir  dir="./ertba/${ert.business}/data/4_tracked"/>
+    <mkdir  dir="./ertba/${ert.business}/data/5_archive"/>
+    <mkdir  dir="./ertba/${ert.business}/conf"/>
+    <mkdir  dir="./ertba/${ert.business}/docs"/>
+    <mkdir  dir="./ertba/${ert.business}/logs"/>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Clean up all build                                                  -->
+  <!-- =================================================================== -->
+  <target name="clean" depends="init">
+    <delete dir="${build.dest}"/>
+    <delete dir="${build.src}"/>
+    <delete file="./lib/opengrass.jar"/>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Compiles the core classes                                           -->
+  <!-- =================================================================== -->
+  <target name="compile" depends="prepare-src">
+    <javac srcdir="${build.src}"
+           destdir="${build.dest}"
+           classpath="${classpath}"
+           debug="${debug}"
+           deprecation="${deprecation}"
+           optimize="${optimize}"/>
+    <jar jarfile="./lib/opengrass.jar" basedir="${build.dest}"/>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- deploy the test reconciliation                                   -->
+  <!-- =================================================================== -->
+  <target name="deploy-test">
+    <copy todir="./ertba/${ert.business}">
+      <fileset dir="./etc/sample/test"/>
+    </copy>
+
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- deploy the test reconciliation                                      -->
+  <!-- =================================================================== -->
+  <target name="test" depends="prepare-test,compile,destroy,deploy-business,deploy-test"/>
+
+</project>

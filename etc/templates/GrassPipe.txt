@@ -1,0 +1,243 @@
+#############
+PREDICATES
+############
+
+DATES
+
+See Java SimpleDateFormat for how to specify different date formats.  Criteria field must have format specified in the Att field
+
+Adaptor.GrassPipe.Type1.Predicate1.GrassDOPredicate = org.opengrass.openadaptor.grassPredicates.DateDOPredicate
+Adaptor.GrassPipe.Type1.Predicate1.Att      = PaymentDate ddMMyyyy
+Adaptor.GrassPipe.Type1.Predicate1.Operator = <
+Adaptor.GrassPipe.Type1.Predicate1.Criteria = {RunDate}
+
+Adaptor.GrassPipe.Type1.Predicate1.GrassDOPredicate = org.opengrass.openadaptor.grassPredicates.DateDOPredicate
+Adaptor.GrassPipe.Type1.Predicate1.Att      = PaymentDate ddMMyyyy
+Adaptor.GrassPipe.Type1.Predicate1.Operator = >=
+Adaptor.GrassPipe.Type1.Predicate1.Criteria = {27071974}
+
+Adaptor.GrassPipe.Type1.Predicate1.GrassDOPredicate = org.opengrass.openadaptor.grassPredicates.DateDOPredicate
+Adaptor.GrassPipe.Type1.Predicate1.Att      = PaymentDate ddMMyyyy
+Adaptor.GrassPipe.Type1.Predicate1.Operator = ==
+Adaptor.GrassPipe.Type1.Predicate1.Criteria = EndDate yyyyMMdd
+
+Adaptor.GrassPipe.Type1.Predicate1.GrassDOPredicate = org.opengrass.openadaptor.grassPredicates.DateDOPredicate
+Adaptor.GrassPipe.Type1.Predicate1.Att      = PaymentDate ddMMyyyy
+Adaptor.GrassPipe.Type1.Predicate1.Operator = !=
+Adaptor.GrassPipe.Type1.Predicate1.Criteria = {RunDate-14}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NUMBERS
+
+Adaptor.GrassPipe.Type1.Predicate1.GrassDOPredicate = org.opengrass.openadaptor.grassPredicates.DoubleDOPredicate
+Adaptor.GrassPipe.Type1.Predicate1.Att      = Strike
+Adaptor.GrassPipe.Type1.Predicate1.Operator = ==
+Adaptor.GrassPipe.Type1.Predicate1.Criteria = {0}
+
+Adaptor.GrassPipe.Type1.Predicate1.GrassDOPredicate = org.opengrass.openadaptor.grassPredicates.DoubleDOPredicate
+Adaptor.GrassPipe.Type1.Predicate1.Att      = Strike
+Adaptor.GrassPipe.Type1.Predicate1.Operator = !=
+Adaptor.GrassPipe.Type1.Predicate1.Criteria = {0}
+
+Adaptor.GrassPipe.Type1.Predicate1.GrassDOPredicate = org.opengrass.openadaptor.grassPredicates.DoubleDOPredicate
+Adaptor.GrassPipe.Type1.Predicate1.Att      = Strike
+Adaptor.GrassPipe.Type1.Predicate1.Operator = <
+Adaptor.GrassPipe.Type1.Predicate1.Criteria = Amount
+
+Adaptor.GrassPipe.Type1.Predicate1.GrassDOPredicate = org.opengrass.openadaptor.grassPredicates.DoubleDOPredicate
+Adaptor.GrassPipe.Type1.Predicate1.Att      = Strike
+Adaptor.GrassPipe.Type1.Predicate1.Operator = >=
+Adaptor.GrassPipe.Type1.Predicate1.Criteria = {10}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REGULAR EXPRESSIONS
+
+See Java RE class for regular expression formats
+Adaptor.GrassPipe.Type1.Predicate1.GrassDOPredicate = org.opengrass.openadaptor.grassPredicates.RegExpDOPredicate
+Adaptor.GrassPipe.Type1.Predicate1.Att      = Book
+Adaptor.GrassPipe.Type1.Predicate1.Operator = !=
+Adaptor.GrassPipe.Type1.Predicate1.Criteria = ^TEST_.*
+
+Adaptor.GrassPipe.Type1.Predicate1.GrassDOPredicate = org.opengrass.openadaptor.grassPredicates.RegExpDOPredicate
+Adaptor.GrassPipe.Type1.Predicate1.Att      = Book
+Adaptor.GrassPipe.Type1.Predicate1.Operator = ==
+Adaptor.GrassPipe.Type1.Predicate1.Criteria = ^TEST_.*
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STRINGS
+Note that NULL will match an empty string where as [NULL] will match the string "NULL"
+Any space characters within the brackets will be interpreted as space characters e.g. [ hello, hola ] will match " hello" and " hola "
+If you need to use ',' as part of a string you will need to use the RegExp Predicate
+
+Adaptor.GrassPipe.Type1.Predicate1.GrassDOPredicate = org.opengrass.openadaptor.grassPredicates.StringDOPredicate
+Adaptor.GrassPipe.Type1.Predicate1.Att      = Location
+Adaptor.GrassPipe.Type1.Predicate1.Operator = !=
+Adaptor.GrassPipe.Type1.Predicate1.Criteria = {EKR}
+
+Adaptor.GrassPipe.Type1.Predicate1.GrassDOPredicate = org.opengrass.openadaptor.grassPredicates.StringDOPredicate
+Adaptor.GrassPipe.Type1.Predicate1.Att      = Location
+Adaptor.GrassPipe.Type1.Predicate1.Operator = ==
+Adaptor.GrassPipe.Type1.Predicate1.Criteria = {NULL}
+
+Adaptor.GrassPipe.Type1.Predicate1.GrassDOPredicate = org.opengrass.openadaptor.grassPredicates.StringDOPredicate
+Adaptor.GrassPipe.Type1.Predicate1.Att      = Location
+Adaptor.GrassPipe.Type1.Predicate1.Operator = ==
+Adaptor.GrassPipe.Type1.Predicate1.Criteria = NULL
+
+Adaptor.GrassPipe.Type1.Predicate1.GrassDOPredicate = org.opengrass.openadaptor.grassPredicates.StringDOPredicate
+Adaptor.GrassPipe.Type1.Predicate1.Att      = Location
+Adaptor.GrassPipe.Type1.Predicate1.Operator = !=
+Adaptor.GrassPipe.Type1.Predicate1.Criteria = {EKR,ERE,CWE}
+
+Adaptor.GrassPipe.Type1.Predicate1.GrassDOPredicate = org.opengrass.openadaptor.grassPredicates.StringDOPredicate
+Adaptor.GrassPipe.Type1.Predicate1.Att      = Location
+Adaptor.GrassPipe.Type1.Predicate1.Operator = !=
+Adaptor.GrassPipe.Type1.Predicate1.Criteria = BookLocation
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FilterXMLFile
+
+Adaptor.GrassPipe.Type1.Predicate1.GrassDOPredicate = org.opengrass.openadaptor.grassPredicates.XMLStringDOPredicate
+Adaptor.GrassPipe.Type1.Predicate1.Att      = Book
+Adaptor.GrassPipe.Type1.Predicate1.Operator = !=
+Adaptor.GrassPipe.Type1.Predicate1.Criteria = ${FILTER_PATH}/imagine_book.xml
+
+#####################################################################################################
+ACTIONS FOR GRASS PIPE
+Dont forget to put 
+Adaptor.GrassPipe.ClassName   = org.opengrass.openadaptor.GrassPipe
+at top of pipe description
+########
+
+CONCATINATE
+
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = org.opengrass.openadaptor.grassActions.ConcatinateAction
+Adaptor.GrassPipe.Type1.Action1.Att1          = Colt
+Adaptor.GrassPipe.Type1.Action1.Att2          = {,}
+Adaptor.GrassPipe.Type1.Action1.Att3          = PositionId
+Adaptor.GrassPipe.Type1.Action1.Dest          = RecId
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DATE FORMAT
+
+See Java SimpleDateFormat for how to specify different date formats.  
+
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = org.opengrass.openadaptor.grassActions.DateFormatAction
+Adaptor.GrassPipe.Type1.Action1.Att1       = PaymentDate
+Adaptor.GrassPipe.Type1.Action1.Att2       = StartDate
+Adaptor.GrassPipe.Type1.Action1.Att3       = EndDate
+Adaptor.GrassPipe.Type1.Action1.oldFormat = ddMMyyyy
+Adaptor.GrassPipe.Type1.Action1.newFormat = ddMMyy
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FIELD ALIAS
+
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = org.opengrass.openadaptor.grassActions.FieldAliasAction
+Adaptor.GrassPipe.Type1.Action1.Source   = StrikeAmount
+Adaptor.GrassPipe.Type1.Action1.Dest     = Strike
+
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = org.opengrass.openadaptor.grassActions.FieldAliasAction
+Adaptor.GrassPipe.Type1.Action1.Source   = {0}
+Adaptor.GrassPipe.Type1.Action1.Dest     = Strike
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MATHS
+
+Non mathematical values will be converted to 0 and a warning produced in the log file
+
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = org.opengrass.openadaptor.grassActions.MathsAction
+Adaptor.GrassPipe.Type1.Action1.Dest    = Total
+Adaptor.GrassPipe.Type1.Action1.Precision  = 2
+
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = org.opengrass.openadaptor.grassActions.MathsAction
+Adaptor.GrassPipe.Type1.Action1.Action      = *
+Adaptor.GrassPipe.Type1.Action1.Att1    = Price
+Adaptor.GrassPipe.Type1.Action1.Att2    = Amount
+Adaptor.GrassPipe.Type1.Action1.Dest    = Total
+Adaptor.GrassPipe.Type1.Action1.Precision  = 2
+
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = org.opengrass.openadaptor.grassActions.MathsAction
+Adaptor.GrassPipe.Type1.Action1.Action      = +
+Adaptor.GrassPipe.Type1.Action1.Att1    = Sale1
+Adaptor.GrassPipe.Type1.Action1.Att2    = Sale2
+Adaptor.GrassPipe.Type1.Action1.Dest    = Amount
+
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = org.opengrass.openadaptor.grassActions.MathsAction
+Adaptor.GrassPipe.Type1.Action1.Action      = *
+Adaptor.GrassPipe.Type1.Action1.Att1    = Total
+Adaptor.GrassPipe.Type1.Action1.Att2    = {10}
+Adaptor.GrassPipe.Type1.Action1.Dest    = Total
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STRING TRIM
+
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = org.opengrass.openadaptor.grassActions.StringTrimAction
+Adaptor.GrassPipe.Type1.Action1.Att        = Book
+Adaptor.GrassPipe.Type1.Action1.Action     = TrimStart
+Adaptor.GrassPipe.Type1.Action1.Index     = 3
+
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = org.opengrass.openadaptor.grassActions.StringTrimAction
+Adaptor.GrassPipe.Type1.Action1.Att        = Book
+Adaptor.GrassPipe.Type1.Action1.Action     = TrimEnd
+Adaptor.GrassPipe.Type1.Action1.Index     = 3
+
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = org.opengrass.openadaptor.grassActions.StringTrimAction
+Adaptor.GrassPipe.Type1.Action1.Att        = Book
+Adaptor.GrassPipe.Type1.Action1.Action     = SaveStart
+Adaptor.GrassPipe.Type1.Action1.Index     = 3
+
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = org.opengrass.openadaptor.grassActions.StringTrimAction
+Adaptor.GrassPipe.Type1.Action1.Att        = SaveEnd
+Adaptor.GrassPipe.Type1.Action1.Action     = TrimStart
+Adaptor.GrassPipe.Type1.Action1.Index     = 3
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STRING CASE
+
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = org.opengrass.openadaptor.grassActions.StringCaseAction
+Adaptor.GrassPipe.Type1.Action1.Att        = Book
+Adaptor.GrassPipe.Type1.Action1.Action     = ToUpper
+
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = org.opengrass.openadaptor.grassActions.StringCaseAction
+Adaptor.GrassPipe.Type1.Action1.Att        = Book
+Adaptor.GrassPipe.Type1.Action1.Action     = ToLower
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VALUE ALIAS
+Note - Alias 4 converts a null value to the string "NULL"
+
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = org.opengrass.openadaptor.grassActions.ValueAliasAction
+Adaptor.GrassPipe.Type1.Action1.Att     = BuySell
+Adaptor.GrassPipe.Type1.Action1.Alias1  = 2 B
+Adaptor.GrassPipe.Type1.Action1.Alias2  = 1 "S 1"
+Adaptor.GrassPipe.Type1.Action1.Alias3  = 0 S
+Adaptor.GrassPipe.Type1.Action1.Alias4  = NULL "NULL"
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+XML FILE DEFINED ALIASING 
+
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = org.opengrass.openadaptor.grassActions.XMLFileAliasAction
+Adaptor.GrassPipe.Type1.Action1.Att        = Book
+Adaptor.GrassPipe.Type1.Action1.FileName   = ${XREF_PATH}/imagine_book.xml
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+EXTRACTION BASED ON REGULAR EXPRESSION
+
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = org.opengrass.openadaptor.grassActions.ExtractAction
+Adaptor.GrassPipe.Type1.Action1.Source        = Date
+Adaptor.GrassPipe.Type1.Action1.RegExp        = ^([\\d].*)[A-Z].*\$
+Adaptor.GrassPipe.Type1.Action1.Dest          = DayAndMonthS
+#####################################################################################################
+FILTER
+
+Adaptor.GrassPipe.ClassName   = org.opengrass.openadaptor.GrassFilter
+#Grass predicates 
+Adaptor.GrassPipe.Type1.Action      = block
+
+Adaptor.GrassPipe.ClassName   = org.opengrass.openadaptor.GrassFilter
+#Grass predicates 
+Adaptor.GrassPipe.Type1.Action      = pass
+
+

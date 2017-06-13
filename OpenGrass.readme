@@ -1,0 +1,173 @@
+
+               OpenGrass - a Reconciliation and Tracking Solution.
+               ===================================================
+
+$LastChangedDate: 2005-09-21 $
+
+
+Introduction
+============
+
+OpenGrass, in its inital release, is a reconciliation that works with OpenAdator 
+to provide Reconciled results from two inputs. OpenGrass provides a set of OpenAdaptor 
+pipes to help with the normalisation and filtering of data as it is prepared for the 
+reconciliation process.
+
+XML files are produced by the process and can be redistributed either through Oapen Adapor
+or used by a third party for tracking and analysis.
+
+
+
+Setting Up OpenGrass
+====================
+
+(1) Download and Install the J2SE Runtime Environment (JRE)
+
+(1.1) Download the Java 2 Standard Edition Runtime Environment (JRE),
+      from http://java.sun.com/j2se.
+
+(1.2) Install the JRE according to the instructions included with the
+      release.
+
+(1.3) Set an environment variable named JAVA_HOME to the pathname of
+      the directory into which you installed the JRE, e.g. c:\j2sdk5.0
+      or /usr/local/java/j2sdk5.0.
+      
+
+(2) Download and Install Perl version 5.6 or higher (Note. Check that
+    Perl is not already installed as part of the Operating system 
+    package. If it is then ignore this section)
+
+(2.1) Download Perl 5.6 or higher from http://www.perl.com/
+
+(2.2) Install Perl according to the instructions included with the
+      release.
+
+
+(3) Download and Install the OpenAdaptor Binary Distribution
+
+(3.1) Download the OpenAdaptor Binary Distribution from, 
+      http://www.openadaptor.org/.
+
+(3.2) Install OpenAdaptor according to the instructions included with 
+      the release.
+
+(3.3) Set an environment variable named OA_HOME to the pathname of
+      the directory into which you installed the OpenAdaptor release
+      e.g. c:\openadaptor\1_7_0 or /usr/local/openadaptor/1_7_0.
+
+
+(4) Download and Install Jakarta Ant Binary Distribution
+
+(4.1) Download the Jakarta Ant Binary Distribution from, 
+      http://ant.apache.org/.
+
+(4.2) Install Jakarta Ant according to the instructions included with the
+      release.
+
+(4.3) Set an environment variable named ANT_HOME to the pathname of
+      the directory into which you installed Jakarta Ant release
+
+
+(5) Download and Install the OpenGrass Distribution
+
+
+(5.1) Download the current release of OpenGrass from:
+      http://www.opengrass.org/
+
+(5.2) Unpack the distribution into a convenient location so that the
+      distribution resides in its own directory.
+      
+(5.3) Set an environment variable named GRASS_HOME to the pathname of
+      the directory into which you installed the OpenGrass distribution.
+      For the purposes of the remainder of this document, the symbolic 
+      name "$GRASS_HOME" is used to refer to the full pathname of the 
+      release directory.
+      
+
+
+Running OpenGrass Using TestRec
+===============================
+
+TestRec is a sample 'Business area' that can be used to both ensure
+OpenGrass is setup correctly and as an example of a business area.
+TestRec can also be used as a template to build other reconciliations from.
+
+
+Grass uses the Build.pl script to automate a number of target tasks which
+are listed by running ./build.pl in the $GRASS_HOME directory (Note: build.pl 
+should always be run from the $GRASS_HOME directory)
+
+
+(1) Build TestRec
+    
+(1.1) To build the TestRec business area, from the $GRASS_HOME directory type
+    
+      ./build.pl -t=test
+    
+      This has now build a business area called TestRec under the 
+      $GRASS_HOME/ertba directory. Looking in this area there are two key 
+      directories, conf/ and data/.
+    
+(1.1) conf/ directory contains all the configuration files required for a 
+      business area.
+      
+(1.2) data/ directory contains the data produced from each stge of the 
+      reconciliation process. a key directory here is data/3_matched which 
+      contains the XML results of the reconciliation.
+      
+
+(2) Running TestRec
+
+(2.1) To run the TestRec buisness area, type
+    
+      perl $GRASS_HOME/src/perl/Reconciliation.pl -bn=TestRec
+      
+      as an output you should get a screen print of Totals results of the 
+      reconciliation.
+
+(2.2) By going to the directory $GRASS_HOME/ertba/TestRec/data/3_matched
+      you will find the following results files
+      
+      (2.2.1) TestRec_breaks.xml
+              This file presents a set of records in XML format denoting
+              items that have been found on both sides that do not match 
+              in one or more of the designated matched fields.
+              
+      (2.2.2) TestRec_matches.xml
+              This file presents a set of records in XML format denoting
+              items that have been found on both sides and that match in
+              ALL the esignated matched fields.
+              
+      (2.2.3) TestRec_np_pri.xml
+              This file presents a set of records in XML format denoting
+              items from the primary side that have not be process due to
+              either a corresponding matching record not being found on the 
+              secondary side or the primary recond was not unique and thus a 
+              one to one reconciliation could not be carried out.
+              
+      (2.2.3) TestRec_np_sec.xml
+              This file presents a set of records in XML format denoting
+              items from the secondary side that have not be process due to
+              either a corresponding matching record not being found on the 
+              primary side or the secondary recond was not unique and thus a 
+              one to one reconciliation could not be carried out.
+              
+      (2.2.4) TestRec_totals.xml
+              This file presents an overview of the results the reconciliation
+              produced and is in XML format.
+              
+              
+Troubleshooting
+================
+
+There is only one thing that can go wrong when installing OpenGrass in that one 
+of the environment variables has not been set up correctly or that the dependant
+packages have not been installed correctly.
+
+(1) Check each of the environment variables are availabel in the terminal you are
+    running the commands from.
+    
+(2) Ensure JRE is installed correclty
+
+(3) Ensure Perl is working correcly

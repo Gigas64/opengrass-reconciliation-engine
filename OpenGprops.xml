@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+
+<!-- OpenGRASS Configuration file for global parameters -->
+<OpenGrass>
+  <global_email_info>
+    <global_email_ref>global_email_ref@opengrass.org</global_email_ref>
+    <global_email_support>global_email_support@opengrass.org</global_email_support>
+    <global_email_deploy>global_email_deploy@opengrass.org</global_email_deploy>
+  </global_email_info>
+</OpenGrass>
+

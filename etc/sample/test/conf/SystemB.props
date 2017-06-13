@@ -1,0 +1,99 @@
+#==================================================================================
+#
+# Description: An example Reconciliation Property file for Open Adaptor
+#
+#
+# Date:     10/09/2002
+# Authur:   Darryl Oatridge
+#
+#
+# Adaptor Layout:
+# ===============
+#
+# FileSource -> Alias ->  XMLFile
+#
+#==================================================================================
+
+
+#==================================================================================
+#
+# Logging:
+#
+#==================================================================================
+
+Adaptor.Logging.LogSetting1         = INFO DEFAULT
+
+Adaptor.Logging.LoggingTimeInfo     = false
+Adaptor.Logging.LoggingThreadInfo   = false
+Adaptor.Logging.LoggingPackageInfo  = false
+
+#==================================================================================
+#
+# Components:
+#
+#==================================================================================
+
+Adaptor.Component1.Name     = FileSource
+Adaptor.Component2.Name     = Alias
+Adaptor.Component3.Name     = XMLFile
+
+#==================================================================================
+#
+# Linkage:
+#
+#==================================================================================
+
+Adaptor.FileSource.LinkTo1  = Alias
+Adaptor.Alias.LinkTo1       = XMLFile
+
+#==================================================================================
+#
+# FileSource:
+#
+#==================================================================================
+
+Adaptor.FileSource.ClassName        = org.openadaptor.adaptor.standard.FileSource
+Adaptor.FileSource.InputFileName    = ${SecondaryTransfer}
+Adaptor.FileSource.DOStringReader   = org.openadaptor.dostrings.DelimitedStringReader
+Adaptor.FileSource.IgnoreQuotes     = true
+Adaptor.FileSource.EmptyStringAsNull    = true
+Adaptor.FileSource.NumAttributes    = 9
+Adaptor.FileSource.FieldDelimiter   = 44
+Adaptor.FileSource.CommentRegExp1   = ^##.*
+
+Adaptor.FileSource.Type1            = reco
+
+
+#==================================================================================
+#
+# Alias:
+#
+#==================================================================================
+
+Adaptor.Alias.ClassName     = org.openadaptor.adaptor.standard.AliasPipe
+Adaptor.Alias.Type1         = reco reco
+Adaptor.Alias.Type1.Alias1  = Att1      NumID
+Adaptor.Alias.Type1.Alias2  = Att2      RefID
+Adaptor.Alias.Type1.Alias3  = Att3      Book
+Adaptor.Alias.Type1.Alias4  = Att4      Quantity
+Adaptor.Alias.Type1.Alias5  = Att5      Currency
+Adaptor.Alias.Type1.Alias6  = Att6      Strike
+
+#==============================================================================
+#
+# XMLFile:
+#
+#==============================================================================
+
+Adaptor.XMLFile.ClassName   = org.openadaptor.adaptor.standard.FileSink
+Adaptor.XMLFile.DOStringWriter  = org.openadaptor.dostrings.XMLStringWriter
+Adaptor.XMLFile.OutputFileName  = ${OUTPUT}
+Adaptor.XMLFile.CreateOutputFile    = true
+Adaptor.XMLFile.WriteMode       = Overwrite
+Adaptor.XMLFile.TypeDefinitions     = none
+Adaptor.XMLFile.WriteEmptyObjects   = false
+Adaptor.XMLFile.WriteEmptyAsSingletons      = false
+Adaptor.XMLFile.WriteEmptyAttributes        = true
+Adaptor.XMLFile.ElideSingletonRootObjectTag = true
+
+

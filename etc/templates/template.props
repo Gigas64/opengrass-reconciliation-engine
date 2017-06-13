@@ -1,0 +1,123 @@
+#================================================================================== 
+# 
+# Description: An example Reconciliation Property file for Open Adaptor
+#
+#
+# Date:        02/06/2003
+# Authur:   
+#
+#
+# Adaptor Layout:
+# ===============
+#
+# FileSource -> Alias -> GrassFilter -> GrassPipe -> XMLFile
+#
+#================================================================================== 
+
+
+#================================================================================== 
+# 
+# Logging:
+#
+#================================================================================== 
+
+Adaptor.Logging.LogSetting1         = TRACE DEFAULT
+
+Adaptor.Logging.LoggingTimeInfo     = false
+Adaptor.Logging.LoggingThreadInfo   = false
+Adaptor.Logging.LoggingPackageInfo  = false
+
+#================================================================================== 
+#
+# Components:
+#
+#================================================================================== 
+
+Adaptor.Component1.Name     = FileSource
+Adaptor.Component2.Name     = Alias
+Adaptor.Component3.Name     = GrassFilter
+Adaptor.Component4.Name     = GrassPipe
+Adaptor.Component5.Name     = XMLFile
+
+#================================================================================== 
+#
+# Linkage:
+#
+#================================================================================== 
+
+Adaptor.FileSource.LinkTo1  = Alias
+Adaptor.Alias.LinkTo1       = GrassFilter
+Adaptor.GrassFilter.LinkTo1 = GrassPipe
+Adaptor.GrassPipe.LinkTo1   = XMLFile
+
+#================================================================================== 
+#
+# FileSource: 
+#
+#================================================================================== 
+
+Adaptor.FileSource.ClassName         = org.openadaptor.adaptor.standard.FileSource
+Adaptor.FileSource.InputFileName     = ${TransferName}
+Adaptor.FileSource.DOStringReader    = org.openadaptor.dostrings.DelimitedStringReader
+Adaptor.FileSource.IgnoreQuotes      = true
+Adaptor.FileSource.EmptyStringAsNull = true
+Adaptor.FileSource.NumAttributes     = 13
+Adaptor.FileSource.FieldDelimiter    = 44
+Adaptor.FileSource.CommentRegExp1    = Header Text*
+
+Adaptor.FileSource.Type1             = reco
+
+#==============================================================================
+#
+# Alias: 
+#
+#================================================================================== 
+
+Adaptor.Alias.ClassName     = org.openadaptor.adaptor.standard.AliasPipe
+Adaptor.Alias.Type1         = reco reco
+Adaptor.Alias.Type1.Alias1  = Att1      Id
+Adaptor.Alias.Type1.Alias2  = Att9      Match1
+Adaptor.Alias.Type1.Alias3  = Att5      Match2
+Adaptor.Alias.Type1.Alias4  = Att2      Info
+
+
+#==============================================================================
+#
+# GrassFilter:
+#
+#==============================================================================
+
+Adaptor.GrassFilter.ClassName       = org.opengrass.openadaptor.GrassFilter
+
+Adaptor.GrassFilter.Type1.Predicate1.GrassAttPredicate = 
+Adaptor.GrassFilter.Type1.Action      = 
+
+#==============================================================================
+#
+# GrassPipe:
+#
+#==============================================================================
+
+Adaptor.GrassPipe.ClassName   = org.opengrass.openadaptor.GrassPipe
+
+Adaptor.GrassPipe.Type1.Predicate1.GrassAttPredicate = 
+Adaptor.GrassPipe.Type1.Action1.GrassDOAction = 
+
+#==============================================================================
+#
+# XMLFile:
+#
+#==============================================================================
+
+Adaptor.XMLFile.ClassName   = org.openadaptor.adaptor.standard.FileSink
+Adaptor.XMLFile.DOStringWriter  = org.openadaptor.dostrings.XMLStringWriter
+Adaptor.XMLFile.OutputFileName  = ${OUTPUT}
+Adaptor.XMLFile.CreateOutputFile    = true
+Adaptor.XMLFile.WriteMode       = Overwrite
+Adaptor.XMLFile.TypeDefinitions     = none
+Adaptor.XMLFile.WriteEmptyObjects   = false
+Adaptor.XMLFile.WriteEmptyAsSingletons      = false
+Adaptor.XMLFile.WriteEmptyAttributes        = true
+Adaptor.XMLFile.ElideSingletonRootObjectTag = true
+
+
